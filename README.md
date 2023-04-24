@@ -14,7 +14,7 @@
 - The system is controlled wirelessly via Bluetooth with an android app developed using MIT App Inventor.
 
 <p align="center">
-	<img src="https://user-images.githubusercontent.com/80714882/234113165-50b23e8c-def4-42bf-a306-8ba56830c085.jpg" width="70%" height="70%">
+	<img src="https://user-images.githubusercontent.com/80714882/234113165-50b23e8c-def4-42bf-a306-8ba56830c085.jpg" width="75%" height="75%">
 </p>
 
 ## Demo
@@ -39,7 +39,7 @@
 - It mimics a room in a house.
 
 <p align="center">
-	<img src="https://user-images.githubusercontent.com/80714882/234113332-74fb8622-caf8-4488-b6c7-f4801b7c3afe.jpg" width="70%" height="70%">
+	<img src="https://user-images.githubusercontent.com/80714882/234113332-74fb8622-caf8-4488-b6c7-f4801b7c3afe.jpg" width="75%" height="75%">
 </p>
 
 ### Hardware
