@@ -8,10 +8,11 @@
    <img src="https://img.shields.io/badge/LICENSE-MIT-green?style=for-the-badge" >
 </p>
 
-## Smart Home Automation
+<p align="center">
+Home automation system developed on ESP32 microcontroller using freeRTOS with smart features. The entire system is controlled wirelessly via Bluetooth with a dedicated android app.
+</p>
 
-- A complete home automation system developed on ESP32 microcontroller using freeRTOS. 
-- The system is controlled wirelessly via Bluetooth with an android app developed using MIT App Inventor.
+&nbsp;
 
 <p align="center">
 	<img src="https://user-images.githubusercontent.com/80714882/234113165-50b23e8c-def4-42bf-a306-8ba56830c085.jpg" width="75%" height="75%">
@@ -20,6 +21,15 @@
 ## Demo
 
 **YouTube** - https://youtu.be/aT6Lj6hBVUk
+
+## About 'Smart Home Automation'
+
+When we think of home automation we generally visualize switching on/off some buttons, monitor temperature, etc. 
+
+> *Its not smart automation in its true sense*
+
+- To achieve true home automation RTOS is integrated in the system which can perform multiple things simultaneously.
+- The system is smart enough to automatically trigger actions based on certain events happening in real time.
 
 ## Features
 
@@ -33,7 +43,7 @@
 - Touch detection on door with alarm using ESP32 inbuilt touch sensor
 - Smoke detection with alarm using MQ2 sensor
 
-## System Overview
+## Hardware
 
 - The entire system is custom made with wiring and placements planned according to requirements.
 - It mimics a room in a house.
