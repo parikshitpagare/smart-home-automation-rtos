@@ -45,28 +45,22 @@ When we think of home automation we generally visualize switching on/off some bu
 
 ## Hardware
 
+### System Overview
+
 - The entire system is custom made with wiring and placements planned according to requirements.
-- It mimics a room in a house.
+- It is developed to resemble a room in a house.
 
 <p align="center">
 	<img src="https://user-images.githubusercontent.com/80714882/234113332-74fb8622-caf8-4488-b6c7-f4801b7c3afe.jpg" width="75%" height="75%">
 </p>
 
-### Hardware
+### Requirements
 
-#### Microcontroller
-
-- ESP32
-
-#### Sensors
-
+- ESP32 Microcontroller
 - DHT11 Temperature and Humidity sensor
 - LDR module
 - MQ2 Gas/Smoke Sensor
 - Ultrasonic Sensor
-
-#### Miscellaneous
-
 - OLED display
 - Relay
 - Buzzers
@@ -74,18 +68,20 @@ When we think of home automation we generally visualize switching on/off some bu
 - Bulb
 - DC fan
 
+### Circuit Connections
+
+Components can be assembled and connected as shown in the circuit diagram.
 
 <p align="center">
 	<img src="https://user-images.githubusercontent.com/80714882/234113520-049bbf32-09a2-4669-a82a-f895dc9fe02e.png" width="70%" height="70%">
 </p>
 
-### Programming  
+## Software  
 
-#### Software
+- To program the microcontroller **Arduino IDE** is used which is compatible with ESP32 microntroller. 
+- In addition certain libraries are required for proper functioning of the microcontroller and interfaced components.
 
-- Arduino IDE
-
-#### Libraries
+### Libraries Required
 
 - [Bluetooth Serial](https://github.com/espressif/arduino-esp32/tree/master/libraries/BluetoothSerial)
 - [Wire](https://github.com/esp8266/Arduino/blob/master/libraries/Wire/)
@@ -94,9 +90,9 @@ When we think of home automation we generally visualize switching on/off some bu
 - [Adafruit_GFX](https://github.com/adafruit/Adafruit-GFX-Library)
 - [Ticker](https://github.com/espressif/arduino-esp32/tree/master/libraries/Ticker)
 
-## App Overview
+## App
 
-- The android app is developed on MIT App Inventor.
+- The android app is developed on **MIT App Inventor** platform.
 
 <p align="center">
 	<img src="https://user-images.githubusercontent.com/80714882/234113882-f83c0412-1feb-4512-9034-2f692feeefb5.png" width="80%" height="80%">
@@ -124,8 +120,8 @@ When we think of home automation we generally visualize switching on/off some bu
 
 ### Temperature and Light Sensing
 
-- DHT11 digital sensor is used to sense temperature in the room and it is displayed on App/OLED.
-- Light intensity in the room is sensed using a LDR (Light Dependent Resistor) module.
+- DHT11 digital sensor is used to sense temperature in the room and it is monitored on App/OLED.
+- Light intensity in the room is sensed using a LDR (Light Dependent Resistor) module. This is used for automatic switching of bulb as explained later.
 
 <p align="center">
 	<img src="https://user-images.githubusercontent.com/80714882/234114566-7230f107-29dd-4cd1-966a-6301c06e53cb.png" width="80%" height="80%">
@@ -136,12 +132,15 @@ When we think of home automation we generally visualize switching on/off some bu
 - For safety purpose, a smoke detection unit is implemented with MQ2 sensor which activates a buzzer and Led in presence of smoke. 
 - The buzzer turns off automatically once the smoke disappears.
 
-
 <p align="center">
 	<img src="https://user-images.githubusercontent.com/80714882/234114873-c41521b8-81c2-43db-bd48-f31e5adf0f3e.png" width="80%" height="80%">
 </p> 
 
 ### Security System 
+
+A security system is implemented on the door using Ultrasonic and Touch sensors.
+
+#### Person Detection
 
 - If a person comes in the range of ultrasonic sensor mounted on the door, the App/OLED displays presence of the person and Led turns on to notify the same.
 
@@ -149,7 +148,10 @@ When we think of home automation we generally visualize switching on/off some bu
 	<img src="https://user-images.githubusercontent.com/80714882/234115167-8e785810-1221-41b8-b0b5-788d5d4c64e7.png" width="80%" height="80%">
 </p> 
 
-- If a person touches the door handle a buzzer is activated and App/OLED displays presence of touch along with an Led indicator.It can be deactivated by pressing the turn off button on app.
+#### Touch Detection
+
+- If a person touches the door handle a buzzer is activated and App/OLED displays presence of touch along with an Led indicator. 
+- It can be deactivated by pressing the turn off button on app.
 - Touch sensing is implemented using ESP32 inbuilt touch sensor.
 
 <p align="center">
@@ -160,9 +162,17 @@ When we think of home automation we generally visualize switching on/off some bu
 
 The fan/bulb is operated in 3 modes using relays,
 
-- Manual Mode : Utilizes the buttons on the App for manual switching.
-- Automatic Mode : Automated switching of fan and light based on temperature monitored by DHT11 sensor and light intensity measured by LDR (Light Dependent Resistor)respectively.
-- Off Mode : Everything can be switched off at once when not required.
+#### Manual Mode 
+
+- Buttons on the App are used to manually switch on/off the bulb and fan.
+
+#### Automatic Mode 
+
+- Automated switching of fan and light based on temperature monitored by DHT11 sensor and light intensity measured by LDR (Light Dependent Resistor) respectively is implemented.
+
+#### Off Mode 
+
+- Everything can be switched off at once when not required.
 
 <p align="center">
 	<img src="https://user-images.githubusercontent.com/80714882/234115221-09de22eb-a5c0-47e3-819a-6b6720899b08.png" width="80%" height="80%">
