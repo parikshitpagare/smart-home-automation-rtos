@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-Home automation system developed on ESP32 microcontroller using freeRTOS with smart features. The entire system is controlled wirelessly via Bluetooth with a dedicated android app.
+Home automation system developed on ESP32 microcontroller using freeRTOS with smart features. The entire system is controlled wirelessly via Bluetooth with a dedicated Android app.
 </p>
 
 &nbsp;
@@ -26,7 +26,7 @@ Home automation system developed on ESP32 microcontroller using freeRTOS with sm
 
 When we think of home automation we generally visualize switching on/off some buttons, monitor temperature, etc. 
 
-> *Its not smart automation in its true sense*
+> *It is not smart automation in true sense*
 
 - To achieve true home automation RTOS is integrated in the system which can perform multiple things simultaneously.
 - The system is smart enough to automatically trigger actions based on certain events happening in real time.
@@ -34,8 +34,8 @@ When we think of home automation we generally visualize switching on/off some bu
 ## Features
 
 - Wireless control with Bluetooth
-- Dedicated android app
-- Activity monitoring on OLED display and android app
+- Dedicated Android app
+- Activity monitoring on OLED display and app
 - Temperature sensing using DHT11 sensor
 - Light intensity sensing using LDR
 - Fan/Light control in 3 modes - manual, automatic (based on sensors) and off
@@ -81,7 +81,13 @@ Components can be assembled and connected as shown in the circuit diagram.
 - To program the microcontroller **Arduino IDE** is used which is compatible with ESP32 microntroller. 
 - In addition certain libraries are required for proper functioning of the microcontroller and interfaced components.
 
-### Libraries Required
+### How to connect ESP32 with Arduino IDE?
+
+- Download and install the Arduino IDE
+- Install the ESP32 Library at File -> Preference -> Additional Boards Manager URLs: https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
+- Then in the Tools -> Board Manager - search for ESP32 and install
+
+### Libraries 
 
 - [Bluetooth Serial](https://github.com/espressif/arduino-esp32/tree/master/libraries/BluetoothSerial)
 - [Wire](https://github.com/esp8266/Arduino/blob/master/libraries/Wire/)
@@ -90,9 +96,14 @@ Components can be assembled and connected as shown in the circuit diagram.
 - [Adafruit_GFX](https://github.com/adafruit/Adafruit-GFX-Library)
 - [Ticker](https://github.com/espressif/arduino-esp32/tree/master/libraries/Ticker)
 
+### RTOS
+
+- Another important software required is **freeRTOS** which is responsible for simultaneous functioning of components present in the system.
+- ESP32 supports freeRTOS out of the box in Arduino IDE with its own flavour on the top of original for proper integration.
+
 ## App
 
-- The android app is developed on **MIT App Inventor** platform.
+The Android app is developed on **MIT App Inventor** platform.
 
 <p align="center">
 	<img src="https://user-images.githubusercontent.com/80714882/234113882-f83c0412-1feb-4512-9034-2f692feeefb5.png" width="80%" height="80%">
@@ -169,10 +180,12 @@ The fan/bulb is operated in 3 modes using relays,
 #### Automatic Mode 
 
 - Automated switching of fan and light based on temperature monitored by DHT11 sensor and light intensity measured by LDR (Light Dependent Resistor) respectively is implemented.
+- The fan automatically turns on when the temperature crosses threshold value of 33°C and turns off when it falls below the threshold.
+- Based on the lighting conditions in the room sensed by LDR, the bulb turns on automatically when light intensity falls below certain threshold and vice versa.
 
 #### Off Mode 
 
-- Everything can be switched off at once when not required.
+- Everything can be switched off at once with one button on the app when leaving the room.
 
 <p align="center">
 	<img src="https://user-images.githubusercontent.com/80714882/234115221-09de22eb-a5c0-47e3-819a-6b6720899b08.png" width="80%" height="80%">
