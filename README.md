@@ -80,8 +80,8 @@ Components can be assembled and connected as shown in the circuit diagram.
 ### How to connect ESP32 with Arduino IDE?
 
 - Download and install the Arduino IDE
-- Install the ESP32 Library at File -> Preference -> Additional Boards Manager URLs: https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
-- Then in the Tools -> Board Manager - search for ESP32 and install
+- Install the ESP32 Library at `File -> Preference -> Additional Boards Manager URLs:` https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
+- Then in the `Tools -> Board Manager` -> search for ESP32 and install
 
 ### Libraries 
 
