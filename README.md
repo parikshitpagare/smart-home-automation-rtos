@@ -18,10 +18,6 @@ Home automation system developed on ESP32 microcontroller using freeRTOS with sm
 	<img src="https://user-images.githubusercontent.com/80714882/234113165-50b23e8c-def4-42bf-a306-8ba56830c085.jpg" width="75%" height="75%">
 </p>
 
-## Demo
-
-**YouTube** - https://youtu.be/aT6Lj6hBVUk
-
 ## About 'Smart Home Automation'
 
 When we think of home automation we generally visualize switching on/off some buttons, monitor temperature, etc. 
