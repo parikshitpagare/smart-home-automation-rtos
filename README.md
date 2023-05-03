@@ -27,6 +27,12 @@ When we think of home automation we generally visualize switching on/off some bu
 - To achieve true home automation RTOS is integrated in the system which can perform multiple things simultaneously.
 - The system is smart enough to automatically trigger actions based on certain events happening in real time.
 
+## Demo
+
+#### Complete Version
+
+- YouTube - [youtu.be/aT6Lj6hBVUk](https://youtu.be/aT6Lj6hBVUk)
+
 ## Features
 
 - Wireless control with Bluetooth
