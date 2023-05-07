@@ -80,7 +80,7 @@ Components can be assembled and connected as shown in the circuit diagram.
 
 ## Software  
 
-- To program the microcontroller **Arduino IDE** is used which is compatible with ESP32 microntroller. 
+- To program the microcontroller **Arduino IDE** is used which is compatible with ESP32. 
 - In addition certain libraries are required for proper functioning of the microcontroller and interfaced components.
 
 ### How to connect ESP32 with Arduino IDE?
@@ -100,7 +100,7 @@ Components can be assembled and connected as shown in the circuit diagram.
 
 ### RTOS
 
-- Another important software required is **freeRTOS** which is responsible for simultaneous functioning of components present in the system.
+- Another important software required is **freeRTOS** which is responsible for real time functioning of components present in the system.
 - ESP32 supports freeRTOS out of the box in Arduino IDE with its own flavour on the top of original for proper integration.
 
 ## App
