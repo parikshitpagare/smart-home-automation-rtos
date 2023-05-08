@@ -33,6 +33,10 @@ When we think of home automation we generally visualize switching on/off some bu
 
 - YouTube - [youtu.be/aT6Lj6hBVUk](https://youtu.be/aT6Lj6hBVUk)
 
+#### Short Version
+
+- Reddit - [reddit.com/smart_home_automation](https://www.reddit.com/r/homeautomation/comments/13aod3a/built_a_complete_smart_home_automation_system/)
+
 ## Features
 
 - Wireless control with Bluetooth
