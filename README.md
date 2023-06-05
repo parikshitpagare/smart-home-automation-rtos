@@ -24,7 +24,7 @@ When we think of home automation we generally visualize switching on/off some bu
 
 > *It is not smart automation in true sense*
 
-- To achieve true home automation RTOS is integrated in the system which can perform multiple things simultaneously.
+- To achieve true home automation Real Time Operating System (RTOS) is integrated in the system which can perform multiple things simultaneously.
 - The system is smart enough to automatically trigger actions based on certain events happening in real time.
 
 ## Demo
@@ -102,7 +102,7 @@ Components can be assembled and connected as shown in the circuit diagram.
 - [Adafruit_GFX](https://github.com/adafruit/Adafruit-GFX-Library)
 - [Ticker](https://github.com/espressif/arduino-esp32/tree/master/libraries/Ticker)
 
-### RTOS
+### Real Time Operating System
 
 - Another important software required is **freeRTOS** which is responsible for real time functioning of components present in the system.
 - ESP32 supports freeRTOS out of the box in Arduino IDE with its own flavour on the top of original for proper integration.
