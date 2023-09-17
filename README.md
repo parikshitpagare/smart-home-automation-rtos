@@ -18,9 +18,12 @@ Home automation system developed on ESP32 microcontroller using freeRTOS with sm
 	<img src="https://user-images.githubusercontent.com/80714882/234113165-50b23e8c-def4-42bf-a306-8ba56830c085.jpg" width="75%" height="75%">
 </p>
 
+## Recognition
+- Showcased on Hackaday - [Tiny Microcontroller Uses Real-Time Operating System](https://hackaday.com/2023/05/10/tiny-microcontroller-uses-real-time-operating-system/)
+
 ## About 'Smart Home Automation'
 
-When we think of home automation we generally visualize switching on/off some buttons, monitor temperature, etc. 
+When we think of home automation we generally visualize switching on/off some buttons, temperature monitoring, etc. 
 
 > *It is not smart automation in true sense*
 
@@ -84,8 +87,7 @@ Components can be assembled and connected as shown in the circuit diagram.
 
 ## Software  
 
-- To program the microcontroller **Arduino IDE** is used which is compatible with ESP32. 
-- In addition certain libraries are required for proper functioning of the microcontroller and interfaced components.
+To program the microcontroller **Arduino IDE** is used which is compatible with ESP32. 
 
 ### How to connect ESP32 with Arduino IDE?
 
@@ -94,6 +96,8 @@ Components can be assembled and connected as shown in the circuit diagram.
 - Then in the `Tools -> Board Manager` -> search for ESP32 and install
 
 ### Libraries 
+
+Certain libraries are required for proper functioning of the microcontroller and interfaced components.
 
 - [Bluetooth Serial](https://github.com/espressif/arduino-esp32/tree/master/libraries/BluetoothSerial)
 - [Wire](https://github.com/esp8266/Arduino/blob/master/libraries/Wire/)
@@ -107,9 +111,9 @@ Components can be assembled and connected as shown in the circuit diagram.
 - Another important software required is **freeRTOS** which is responsible for real time functioning of components present in the system.
 - ESP32 supports freeRTOS out of the box in Arduino IDE with its own flavour on the top of original for proper integration.
 
-## App
+### Android App
 
-The Android app is developed on **MIT App Inventor** platform.
+The Android app is developed on [MIT App Inventor](https://appinventor.mit.edu/) platform.
 
 <p align="center">
 	<img src="https://user-images.githubusercontent.com/80714882/234113882-f83c0412-1feb-4512-9034-2f692feeefb5.png" width="80%" height="80%">
