@@ -20,7 +20,7 @@ Home automation system developed on ESP32 microcontroller using freeRTOS with sm
 </p>
 
 ## Recognition
-- Showcased on Hackaday - [Tiny Microcontroller Uses Real-Time Operating System](https://hackaday.com/2023/05/10/tiny-microcontroller-uses-real-time-operating-system/)
+- Showcased on **Hackaday** - [Tiny Microcontroller Uses Real-Time Operating System](https://hackaday.com/2023/05/10/tiny-microcontroller-uses-real-time-operating-system/)
 
 ## About 'Smart Home Automation'
 
