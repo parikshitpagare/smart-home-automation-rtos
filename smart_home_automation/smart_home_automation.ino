@@ -7,9 +7,30 @@
  * github.com/parikshitpagare
  * linkedin.com/in/parikshitpagare 
  * 
- * Project link: github.com/parikshitpagare
+ * Project link: github.com/parikshitpagare/smart-home-automation-rtos
  * 
  * MIT License 
+
+ * Copyright (c) 2024 Parikshit Pagare
+
+ * Permission is hereby granted, free of charge, to any person obtaining a copy 
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ *
  */
 
 #include "BluetoothSerial.h"
@@ -37,31 +58,31 @@ static const BaseType_t app_cpu = 1;
 #endif
 
 /* Sensor pins */
-#define DHTPIN 33                                         // DHT11 temperature sensor (GPIO 33)
+#define DHTPIN 33                 // DHT11 temperature sensor
 #define DHTTYPE DHT11
-#define lightSensor 26                                    // LDR sensor (GPIO 25 )
-#define smokeSensor 25                                    // MQ2 smoke and gas sensor (GPIO 26 )
-#define touchSensor 4                                     // Touch sensor (GPIO 4)
-#define echo 2                                            // Ultrasonic sensor echo pin (GPIO 32)
-#define trigger 15                                        // Ultrasonic sensor trigger pin (GPIO 33)
+#define lightSensor 26            // LDR sensor
+#define smokeSensor 25            // MQ2 smoke and gas sensor
+#define touchSensor 4             // Touch sensor (GPIO 4)
+#define echo 2                    // Ultrasonic sensor echo pin
+#define trigger 15                // Ultrasonic sensor trigger pin
          
 /* Relay pins */          
-#define fanRelay 17                                       // Relay for fan (GPIO )
-#define lightRelay 16                                     // Relay for light (GPIO )
+#define fanRelay 17               // Relay for fan
+#define lightRelay 16             // Relay for light
 
 /* Buzzer pins */
-#define smokeBuzzer 14                                    // Buzzer for alerting smoke or gas (GPIO )
-#define touchBuzzer 27                                    // Buzzer for alerting touch (GPIO )
+#define smokeBuzzer 14            // Buzzer for alerting smoke or gas
+#define touchBuzzer 27            // Buzzer for alerting touch
 
 /* Led pins */
-#define smokeLed 5                                        // Led for alerting smoke (GPIO )
-#define touchLed 19                                       // Led for alerting touch (GPIO )
-#define ultrasonicLed 18                                  // Led for alerting when someone in range (GPIO )
+#define smokeLed 5                // Led for alerting smoke
+#define touchLed 19               // Led for alerting touch
+#define ultrasonicLed 18          // Led for alerting when someone in range
 
 /* Setting OLED display parameters */
-#define SCREEN_WIDTH 128                                  // OLED display width, in pixels
-#define SCREEN_HEIGHT 64                                  // OLED display height, in pixels
-#define SCREEN_ADDRESS 0x3C                               // i2c address for OLED display
+#define SCREEN_WIDTH 128          // OLED display width, in pixels
+#define SCREEN_HEIGHT 64          // OLED display height, in pixels
+#define SCREEN_ADDRESS 0x3C       // i2c address for OLED display
 #define OLED_RESET 4 
 
 /* Defining objects */
