@@ -78,12 +78,12 @@ When we think of home automation we generally visualize switching on/off some bu
 - Bulb
 - DC fan
 
-### Circuit Connections
+### Schematic
 
-Components can be assembled and connected as shown in the circuit diagram.
+Components can be assembled and connected as shown in the schematic.
 
 <p align="center">
-	<img src="https://user-images.githubusercontent.com/80714882/234113520-049bbf32-09a2-4669-a82a-f895dc9fe02e.png" width="70%" height="70%">
+	<img src="https://github.com/parikshitpagare/smart-home-automation-rtos/assets/80714882/7b1ebb97-7876-485a-b43b-686890d2b0f5" width="80%" height="80%">
 </p>
 
 ## Software  
